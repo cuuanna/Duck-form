@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duck form</title>
+    <title>Anpanman form</title>
     <link rel="stylesheet" href="Styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    
+
+<div class="container">
+
+<img src="Images/shokupanman.png" alt="Shokupanman">
+
 <form>
+    <h1>Want to save the world?</h1>
+    <p>Join the Anpanman foundation!</p>
 
     <div>
         <label for="full_name">FULL NAME</label>
@@ -22,6 +28,8 @@
         <label for="email">EMAIL</label>
         <input type="text" id="email" placeholder="adam@smith.com">
     </div>
+    
+     <!-- fixa placeholders, byt meddelanden -->
     
     <br>
     
@@ -39,11 +47,26 @@
 
     <br>
 
+
+    <!-- placeholder funkar ej -->
+    <label for="Motivation">Motivation</label>
+    <select id="Motivation" name="Motivation" placeholder="Select One">
+    <option value="alt3">alternativ 1</option>
+    <option value="alt2">alternativ 2</option>
+    <option value="alt1">alternativ 3</option>
+  </select>
+
+  <br>
+
     <div>
         <input type="submit" value="Send">
     </div>
 
 </form>
+
+<img src="Images/Anpanman.png" alt="Anpanman">
+
+</div>
 
 </body>
 </html>
