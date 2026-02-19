@@ -18,48 +18,51 @@
     <p>Join the Anpanman foundation!</p>
 
     <div>
-        <label for="full_name">FULL NAME</label>
-        <input type="text" id="full_name" placeholder="Adam Smith"> 
+        <label for="full_name">Full Name</label>
+        <input type="name" id="full_name" placeholder="Your name here"> 
     </div>
-    
-    <br>
     
     <div>
-        <label for="email">EMAIL</label>
-        <input type="text" id="email" placeholder="adam@smith.com">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email here">
     </div>
     
-     <!-- fixa placeholders, byt meddelanden -->
-    
-    <br>
-    
-    <div>
-        <label for="message_reg">MESSAGE REGARDING</label>
-        <input type="text" id="message_reg">
+    <div class="regarding">
+            <label for="regarding">Message Regarding</label>
+        <select id="regarding" name="regarding" required>
+        <option value="" disabled selected>Choose hero</option>
+        <option value="alt3">Anpanman</option>
+        <option value="alt2">Shokupanman</option>
+        <option value="alt1">Melonpanna</option>
+        </select>
     </div>
-    
-    <br>
 
-    <div>
-        <label for="message">MESSAGE</label>
-        <input type="text" id="message">
+    <div class="Message">
+        <label for="message">Message</label>
+        <input type="message" id="message" placeholder="I want to save the world!">
     </div>    
 
-    <br>
+    <div class="Motivation">
+        <label for="Motivation">Motivation</label>
+        <select id="Motivation" name="Motivation" required>
+        <option value="" disabled selected>Choose One</option>
+        <option value="alt3">I want to protect the weak</option>
+        <option value="alt2">I believe in justice</option>
+        <option value="alt1">I love bread</option>
+        </select>
+    </div>
+
+    <div class="checkbox">
+        <div class="checkbox">
+        <input type="checkbox" id="terms">
+        <label for="terms">I accept the challenge!</label>
+    </div>
+
+    </div>
 
 
-    <!-- placeholder funkar ej -->
-    <label for="Motivation">Motivation</label>
-    <select id="Motivation" name="Motivation" placeholder="Select One">
-    <option value="alt3">alternativ 1</option>
-    <option value="alt2">alternativ 2</option>
-    <option value="alt1">alternativ 3</option>
-  </select>
-
-  <br>
-
-    <div>
-        <input type="submit" value="Send">
+   <div class="button">
+        <button type="submit" value="Send">Send</button>
     </div>
 
 </form>
